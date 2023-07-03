@@ -36,12 +36,33 @@
     min-height: 100vh
 }
 
+.ports_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0;
+    background-color: #ebbe00;
+}
+
+.ports_container_list {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.ports_container_list_item {
+    width: -moz-fit-content;
+    width: fit-content;
+    line-height: 2rem;
+    color: #000000;
+    text-decoration: none;
+}
+
 .bottom_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 30px;
-    background: #ebbe00
+    background: #ebbe00;
 }
 
 .bottom_footer_left {
@@ -70,7 +91,7 @@
     align-items: center;
     cursor: pointer;
     background: transparent;
-    border-radius: 8px
+    border-radius: 8px;
 }
 
 .bottom_footer_right_language_text {
@@ -78,7 +99,7 @@
     font-size: 15px;
     font-weight: 700;
     color: #ee3425;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .bottom_footer_right_social_media {

@@ -11,6 +11,30 @@
 </head>
 
 <body>
+    <script>
+        var ports = [
+            { href: "/en-IN/discovery-rates/sea/INIXY/QAHMD?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Hamad" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/IRBND?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Bandar Abbas" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/EGSOK?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Sokhna(Al Sokhna)" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/SAJED?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Jeddah" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/BDCGP?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Chittagong" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/KEMBA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Mombasa" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/IDJKT?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Jakarta(Tanjung Priok)" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/AEJEA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Jebel Ali" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/BHBAH?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Bahrain" },
+            { href: "/en-IN/discovery-rates/sea/INIXY/AFHEA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false", text: "Kandla to Herat (AF)" }
+        ];
+
+        var portsContainer = document.getElementById("ports-container");
+
+        for (var i = 0; i < ports.length; i++) {
+            var anchor = document.createElement("a");
+            anchor.setAttribute("class", "ports_container_list_item");
+            anchor.setAttribute("href", ports[i].href);
+            anchor.textContent = ports[i].text;
+            portsContainer.appendChild(anchor);
+        }
+    </script>
     <div class="page_container">
         <div class="navbar">
             <a href="#" class="logo"><img src="path/to/logo.png" alt="Logo"></a>
@@ -26,40 +50,136 @@
                 <a href="#">Sign Up</a>
             </div>
         </div>
-        <div class="styles_bottom_footer__pr0sd">
-            <div class="styles_bottom_footer_left__7DOKA">
-                <span class="styles_copyright_list_cogo__y5Yaa">© 2023 Cogo
-                    Universe PTE. All rights reserved.</span>
-                <ul class="styles_copyright_list__zrvQ7">
-                    <li role="presentation" class="styles_list__jGq8v"><a href="/en-IN/terms-and-conditions">Terms and
-                            Conditions |</a></li>
-                    <li role="presentation" class="styles_list__jGq8v"><a href="/en-IN/cookie-policy">Cookie policy
-                            |</a></li>
-                    <li role="presentation" class="styles_list__jGq8v"><a href="/en-IN/privacy-policy">Privacy and Data
-                            Protection Policy</a></li>
-                </ul>
-                <span class="styles_copyright_list_mobile___c7rQ">© 2023 Cogo Universe PTE. All rights
-                    reserved.</span>
+
+        <div class="ports_container">
+            <div class="ports_container_list">
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/QAHMD?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Hamad
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/IRBND?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Bandar Abbas
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/EGSOK?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Sokhna(Al Sokhna)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/SAJED?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Jeddah
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/BDCGP?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Chittagong
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/KEMBA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Mombasa
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/IDJKT?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Jakarta(Tanjung Priok)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/AEJEA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Jebel Ali
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/BHBAH?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Bahrain
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/AFHEA?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Herat (AF)
+                </a>
             </div>
-            <div class="styles_bottom_footer_right__l_rTH">
-                <div>
-                    <div class="styles_language_pop__GDouM">
-                        <div role="button" aria-expanded="false">
-                            <div role="button" tabindex="0" class="styles_lang__N_yGq">
-                                <div class="styles_globe_container__g_at6">
-                                    <div><img alt="IN" loading="lazy" width="20" height="20" decoding="async"
-                                            data-nimg="1"
-                                            srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fglobe.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fglobe.png&amp;w=48&amp;q=75 2x"
-                                            src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fglobe.png&amp;w=48&amp;q=75"
-                                            style="color: transparent; margin-right: 5px;"></div>
-                                    <div class="styles_selected_lang__aePh2">English (IN)</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="ports_container_list">
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/LKCMB?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Colombo
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INIXY/IQUQR?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Kandla to Umm Qasr North
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/TZDAR/INIXY?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Dar es Salaam to Kandla
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/IRBND/INIXY?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Bandar Abbas to Kandla
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/PLGDY/INIXY?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Gdynia to Kandla
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/HKHKG/INBHU?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Hong Kong to Bhavnagar
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/JPTOS?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to TOYAMA-SHINKO
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/VEPBL?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Puerto Cabello
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/BDMGL?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Mongla
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/NICIO?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Corinto
+                </a>
+            </div>
+            <div class="ports_container_list">
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/VELAG?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to La Guaira
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/IRBND?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Bandar Abbas
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/THBMT?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Bangkok Modern Terminal
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/RULED?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Saint Petersburg (St Petersburg)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/GBELM?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Ellesmere (GB)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/TZDAR?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Dar es Salaam
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/USNJH?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Nashville (US)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/CNTOL?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Tongling
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/BFTEM?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Tema (BF)
+                </a>
+                <a class="ports_container_list_item"
+                    href="/en-IN/discovery-rates/sea/INMUN/ITVDL?service=fcl?is_origin_icd=false&amp;is_destination_icd=false">
+                    Mundra to Vado Ligure
+                </a>
             </div>
         </div>
+
         <div class="bottom_footer">
             <div class="bottom_footer_left">
                 <span>© 2023 Cogo Universe PTE. All rights reserved.</span>
