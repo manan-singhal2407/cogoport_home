@@ -138,6 +138,68 @@
     }
 }
 
+.main_container_video_container {
+    position: relative;
+    height: 450px;
+    cursor: pointer;
+}
+
+.main_container_video_thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_container_video_play_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+.main_container_know_more {
+    background: #ee3425;
+    margin-bottom: 50px;
+}
+
+.main_container_know_more_container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_container_know_more_container_text {
+    padding: 25px 0;
+}
+
+.main_container_know_more_container_text h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.main_container_know_more_container_text p {
+    color: #ffffff;
+}
+
+.main_container_know_more_button {
+    display: flex;
+    color: #000000;
+    background: #fbdc00;
+    height: 36px;
+    align-items: center;
+    padding: 4px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    border: 0px;
+    border-radius: 4px;
+}
+
 .main_container_blogs {
     display: flex;
     flex-direction: column;
