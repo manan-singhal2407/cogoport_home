@@ -1,9 +1,22 @@
+:root {
+    --color-primary: #fbdc00;
+    --color-secondary: #ee3425;
+    --font-family: "PT Sans", sans-serif;
+    --font-family-heading: "Ubuntu", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 .page_container {
-    --layout-topbar: 56px;
-    --layout-startbar: 200px;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-    min-height: 100vh
+    width: 100%;
 }
 
 .nav_container {
