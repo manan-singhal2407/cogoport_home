@@ -1,39 +1,90 @@
-.navbar {
-    background-color: #f2f2f2;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar .logo {
-    float: left;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-}
-
-.navbar .options {
-    float: left;
-}
-
-.navbar .login-signup {
-    float: right;
-}
-
 .page_container {
     --layout-topbar: 56px;
     --layout-startbar: 200px;
     min-width: -moz-fit-content;
     min-width: fit-content;
     min-height: 100vh
+}
+
+.nav_container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 8px 16px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 1px 6px rgba(169, 188, 218, .65);
+}
+
+.nav_container_logo {
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav_container_main_container {
+    margin: 0 auto;
+}
+
+.nav_container_main_nav_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_container_main_nav_list a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav_container_main_nav_list a:hover {
+    color: #ee3425
+}
+
+.nav_container_main_nav_item {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.nav_container_right_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.nav_container_right_container a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav_container_login {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.nav_container_signup_button {
+    background: #ee3425;
+    color: #ffffff;
+    height: 36px;
+    align-items: center;
+    padding: 4px 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    border: 0px;
+    border-radius: 8px;
 }
 
 .main_container {
