@@ -54,6 +54,8 @@ body, html {
 
 .nav_container_main_nav_list a {
     color: #000000;
+    font-family: var(--font-family-heading);
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -1019,6 +1021,7 @@ body, html {
     display: flex;
     align-items: center;
     padding: 8px 10px;
+    font-family: var(--font-family-heading);
     font-size: 12px;
     font-weight: 700;
 }
@@ -1029,6 +1032,7 @@ body, html {
 
 .bottom_footer_left_policy_item {
     color: #000000;
+    text-decoration: none;
 }
 
 .bottom_footer_right {
@@ -1040,15 +1044,15 @@ body, html {
     display: flex;
     align-items: center;
     cursor: pointer;
-    background: transparent;
     border-radius: 8px;
 }
 
 .bottom_footer_right_language_text {
     margin-left: 6px;
+    font-family: var(--font-family);
     font-size: 15px;
     font-weight: 700;
-    color: #ee3425;
+    color: var(--color-secondary);
     text-decoration: underline;
 }
 
@@ -1056,6 +1060,6 @@ body, html {
     padding: 8px 20px;
 }
 
-.bottom_footer_right_social_media svg {
-    color: #000000;
+.bottom_footer_right_social_media a {
+    text-decoration: none;
 }
