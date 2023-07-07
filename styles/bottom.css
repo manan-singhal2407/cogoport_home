@@ -2,6 +2,54 @@
     --bottom-color: #ebbe00;
 }
 
+.nav_bar_bottom_container {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 50px;
+    background: var(--color-primary);
+}
+
+.nav_bar_bottom_list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.nav_bar_bottom_list span {
+    margin-top: 20px;
+    font-family: var(--font-family-heading);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+.nav_bar_bottom_list h4 {
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-family: var(--font-family-heading);
+    font-size: 14px;
+    font-family: 700;
+}
+
+.nav_bar_bottom_list a {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav_bar_bottom_list a:hover {
+    text-decoration: underline;
+}
+
 .ports_container {
     display: flex;
     justify-content: space-between;
