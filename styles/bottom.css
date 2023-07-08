@@ -213,3 +213,21 @@
 .bottom_footer_right_social_media a {
     text-decoration: none;
 }
+
+@media (max-width:767px) {
+    .main_container_newsletter {
+        display: none;
+    }
+
+    .nav_bar_bottom_container {
+        display: none;
+    }
+
+    .ports_container {
+        display: none;
+    }
+
+    .bottom_footer {
+        display: none;
+    }
+}

@@ -166,12 +166,11 @@ body, html {
 .main_container_serve_count {
     width: 1200px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 50px 16px 16px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
-    padding-top: 50px;
 }
 
 .main_container_serve_container {
@@ -443,7 +442,7 @@ body, html {
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 700;
-    margin: 0 20px;
+    margin: 0 20px 20px;
 }
 
 .main_container_works_heading_active_button {
@@ -468,6 +467,10 @@ body, html {
 .main_container_works_stage_image_container img {
     width: 560px;
     height: 320px;
+}
+
+.main_container_works_stage_mobile_image_container {
+    display: none;
 }
 
 .main_container_works_stage1_container {
@@ -682,7 +685,7 @@ body, html {
 
 .main_container_know_more {
     background: var(--color-secondary);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .main_container_know_more_container {
@@ -874,4 +877,142 @@ body, html {
 .side_whatsapp_container img {
     width: 35px;
     height: 35px;
+}
+
+@media (max-width:767px) {
+    .main_container_top_heading {
+        font-size: 20px;
+    }
+
+    .main_container_serve_count {
+        width: 100%;
+        padding-top: 16px;
+        margin-bottom: -30px;
+    }
+
+    .main_container_serve_container {
+        width: 50%;
+        text-align: center;
+    }
+
+    .main_container_serve_container h2 {
+        font-size: 24px;
+    }
+
+    .main_container_serve_container h4 {
+        font-size: 14px;
+    }
+
+    .main_container_started_container {
+        padding-top: 8px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_container_started_container h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .main_container_works {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .main_container_works_heading_container {
+        flex-direction: column;
+    }
+
+    .main_container_works_container {
+        flex-direction: column;
+    }
+
+    .main_container_works_stage1_container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main_container_works_stage2_container {
+        width: 100%;
+    }
+
+    .main_container_works_stage_image_container {
+        display: none;
+    }
+
+    .main_container_works_stage_mobile_image_container {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .main_container_works_stage_mobile_image_container img {
+        width: 280px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .main_container_works_arrow1,
+    .main_container_works_arrow2,
+    .main_container_works_arrow3,
+    .main_container_works_arrow4 {
+        display: none;
+    }
+
+    .main_container_industries_served_container {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .main_container_industries_served_data_container {
+        margin-top: -10px;
+        justify-content: space-around;
+    }
+
+    .main_container_industries_served_item_container img {
+        margin-bottom: 6px;
+        margin-top: 30px;
+    }
+
+    .main_container_get_started {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .main_container_get_started_text_container h2 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .main_container_get_started_text_container a {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .main_container_know_more_container {
+        padding-top: 8px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_container_know_more_container_text h3 {
+        font-size: 20px;
+    }
+
+    .main_container_know_more_container_text p {
+        margin-bottom: 0;
+    }
+
+    .main_container_blogs {
+        width: 100%;
+    }
+
+    .main_container_blogs_container {
+        flex-direction: column;
+        align-items: center
+    }
 }
