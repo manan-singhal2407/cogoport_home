@@ -215,8 +215,31 @@
 }
 
 @media (max-width:767px) {
-    .main_container_newsletter {
+    .main_container_newsletter_image {
         display: none;
+    }
+
+    .main_container_newsletter_data {
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .main_container_newsletter_data h3 {
+        font-size: 20px;
+    }
+
+    .main_container_newsletter_data span {
+        margin-top: 4px;
+        font-size: 15px;
+    }
+
+    .main_container_newsletter_input_container {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .main_container_newsletter_input_container input {
+        width: 100%;
     }
 
     .nav_bar_bottom_container {
