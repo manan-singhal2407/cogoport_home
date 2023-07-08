@@ -80,3 +80,9 @@
     border: 0px;
     border-radius: 8px;
 }
+
+@media (max-width:767px) {
+    .nav_container {
+        display: none;
+    }
+}

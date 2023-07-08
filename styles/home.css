@@ -163,6 +163,10 @@ body, html {
     margin-bottom: -39px;
 }
 
+.main_container_top_view_video_mobile {
+    display: none;
+}
+
 .main_container_serve_count {
     width: 1200px;
     margin: 0 auto;
@@ -884,6 +888,30 @@ body, html {
         font-size: 20px;
     }
 
+    .main_container_top_view_container {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .main_container_top_view_content h1 {
+        font-size: 24px;
+    }
+
+    .main_container_top_view_content br {
+        display: none;
+    }
+
+    .main_container_top_view_video {
+        display: none;
+    }
+
+    .main_container_top_view_video_mobile {
+        display: flex;
+        flex: 1;
+        height: 400px;
+        width: 100%;
+    }
+
     .main_container_serve_count {
         width: 100%;
         padding-top: 16px;
@@ -901,6 +929,57 @@ body, html {
 
     .main_container_serve_container h4 {
         font-size: 14px;
+    }
+
+    .main_container_supply_chain {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .main_container_supply_chain h2 {
+        font-size: 24px;
+    }
+
+    .main_container_supply_chain_image_container img {
+        width: 100%;
+    }
+
+    .main_container_products_container {
+        width: 100%;
+    }
+
+    .main_container_products_container_items {
+        display: flex;
+        padding: 0;
+    }
+
+    .main_container_products_container_items h3 {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .main_container_products_item_card_view {
+        width: 128px;
+        height: 128px;
+        padding: 0;
+        margin: 8px;
+    }
+
+    .main_container_products_item_card_view h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .main_container_products_item_card_view span {
+        font-size: 12px;
+        margin: 8px 0 6px 8px;
+    }
+
+    .main_container_products_item {
+        flex-direction: column;
     }
 
     .main_container_started_container {
@@ -1014,5 +1093,9 @@ body, html {
     .main_container_blogs_container {
         flex-direction: column;
         align-items: center
+    }
+
+    .side_whatsapp_container {
+        display: none;
     }
 }
