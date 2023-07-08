@@ -13,6 +13,10 @@
     box-shadow: 0 1px 6px rgba(169, 188, 218, .65);
 }
 
+.nav_container_mobile_nav {
+    display: none;
+}
+
 .nav_container_logo {
     display: block;
     margin-left: auto;
@@ -82,7 +86,28 @@
 }
 
 @media (max-width:767px) {
-    .nav_container {
+    .nav_container_mobile_nav {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        padding: 0;
+        margin-right: 16px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .nav_container_logo {
+        margin-left: 0;
+    }
+
+    .nav_container_main_container {
+        display: none;
+    }
+
+    .nav_container_right_container {
         display: none;
     }
 }
