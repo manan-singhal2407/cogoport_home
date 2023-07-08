@@ -39,8 +39,7 @@ body, html {
     padding-top: 57px;
     margin-top: -57px;
     background: url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp);
-    background-color: var(--color-secondary);
-    background-repeat: no-repeat;
+    background-color: var(--color-primary);
     background-position: bottom;
     background-size: 100%;
 }
@@ -58,14 +57,19 @@ body, html {
 }
 
 .main_container_top_view_content h1 {
-    margin-bottom: 20px;
+    font-family: var(--font-family-heading);
+    font-size: 40px;
+    margin: 0 0 20px;
 }
 
 .main_container_top_view_content p {
-    margin-bottom: 20px
+    font-family: var(--font-family);
+    font-size: 16px;
+    margin: 0 0 20px;
 }
 
 .main_container_top_view_form_heading {
+    font-family: var(--font-family);
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
@@ -81,55 +85,36 @@ body, html {
     align-items: center;
 }
 
-.main_container_top_view_form_container {
-    display: flex;
+.main_container_top_view_form_left {
+    display: block;
     position: relative;
-    min-width: 110px;
+    width: 110px;
     height: 41px;
     border: 1px solid #e0e0e0;
+    background: #ffffff;
     border-right: none;
+    cursor: pointer;
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    outline: none;
-    justify-content: space-between;
+    padding: 9px 40px;
 }
 
-.main_container_top_view_form_phone_code_container {
-    display: flex;
-    align-items: center;
-    background: #e0e0e0;
+.main_container_top_view_form_left p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.main_container_top_view_form_phone_code_container img {
+.main_container_top_view_form_left img {
+    right: 12px;
+    top: 15px;
+    height: 12px;
     position: absolute;
     margin-left: 10px;
 }
 
-.main_container_top_view_form_start {
-    min-width: 110px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    cursor: pointer;
-    overflow: hidden;
-    padding: 0;
-}
-
-.main_container_top_view_form img {
-    position: absolute;
-    margin-left: 10px;
-}
-
-.main_container_top_view_form_whatsapp_icon {
-    width: 20px;
-    height: 20px;
-    top: 10px;
-    left: 4px;
-}
-
-.main_container_top_view_form_input {
+.main_container_top_view_form input {
     box-sizing: border-box;
     width: 100%;
     min-height: 41px;
@@ -143,21 +128,31 @@ body, html {
     border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    outline: none;
 }
 
-.main_container_top_view_form_button {
+.main_container_top_view_form button {
     position: absolute;
-    top: 8px;
-    right: 12px;
     width: 90px;
+    right: 12px;
     padding: 2px 4px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
     color: #ffffff;
     text-align: center;
     cursor: pointer;
     background: #36bb22;
     border: 0px;
     border-radius: 12px;
+}
+
+.main_container_top_view_form_whatsapp_icon {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 4px;
+    position: absolute;
+    margin-left: 10px;
 }
 
 .main_container_top_view_video {
@@ -853,4 +848,30 @@ body, html {
     border: 0;
     padding: 8px 42px;
     color: #ffffff;
+}
+
+.side_whatsapp_container {
+    position: fixed;
+    width: 90px;
+    top: 20%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    filter: drop-shadow(0 0 16px rgb(98 127 172/50%));
+    border-radius: 4px 0 0 4px;
+    transition: .15s ease-in-out;
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.side_whatsapp_container img {
+    width: 35px;
+    height: 35px;
 }
