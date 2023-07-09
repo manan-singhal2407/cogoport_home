@@ -48,7 +48,7 @@
     cursor: pointer;
 }
 
-.nav_container_main_nav_item img {
+.nav_container_main_nav_item svg {
     width: 10px;
     height: 10px;
     margin-left: 2px;
